@@ -1,0 +1,26 @@
+{
+	"name": "W11O20",
+	"version": "1.0.0",
+	"description": "Project HTML Template",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Ya",
+	"license": "ISC",
+	"devDependencies": {
+		"bootstrap": "^4.6.0",
+		"browser-sync": "^2.26.7",
+		"del": "^5.1.0",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^7.0.1",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-fontgen": "^0.2.5",
+		"gulp-imagemin": "^7.1.0",
+		"gulp-newer": "^1.4.0",
+		"gulp-rsync": "0.0.8",
+		"gulp-sass": "^4.1.0",
+		"gulp-uglify-es": "^2.0.0"
+	}
+}

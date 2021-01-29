@@ -1,0 +1,94 @@
+// USER VARIABLES SECTION
+
+$accent: #d00022; // Accent Color
+$font_size: 14px; // Body Font Size
+$text_color: #262626; // Text Color
+$font_base: Lato, sans-serif; 
+$font_title: Montserrat, sans-serif;
+$font_alt: Poppins, sans-serif; 
+$font_awesome: 'Font Awesome 5 Free';
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px;
+$gutter: $grid-gutter-width;
+
+$xlarge: 1200px;
+$large: 992px;
+$medium: 768px;
+$small: 576px;
+
+// IMPORT SECTION
+
+// @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/text'; // Optional Bootstrap Utilites
+
+//@import 'jquery.fancybox.css';
+//@import 'lightslider.css';
+//@import '_slick/slick';
+//@import '_slick/slick-theme';
+
+//@import '_fontawesome/fontawesome';
+// @import '_fontawesome/brands';
+// @import '_fontawesome/solid';
+// @import '_fontawesome/regular';
+// FONTS LOAD SECTION
+
+// @mixin font($fname, $fstyle, $fweight, $furl) {
+// 	@font-face {
+// 		font-family: $fname;
+// 		font-style: $fstyle;
+// 		font-weight: $fweight;
+// 		font-display: swap; // Uncomment to initially display system fonts
+// 		src: local($fname),
+// 			 url($furl+'.woff2') format('woff2'),
+// 			 url($furl+'.woff') format('woff');
+// 	}
+// }
+
+// @include font('Lato', normal, 400, '../fonts/Lato/Lato-Regular');
+// @include font('Lato', normal, 600, '../fonts/Lato/Lato-Bold');
+// @include font('Lato', normal, 700, '../fonts/Lato/Lato-Black');
+// @include font('Montserrat', normal, 400, '../fonts/Montserrat/Montserrat-Regular');
+// @include font('Montserrat', normal, 600, '../fonts/Montserrat/Montserrat-Bold');
+// @include font('Poppins', normal, 400, '../fonts/Poppins/Poppins-Regular');
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder {
+	color: #999;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+input, textarea {
+	outline: none;
+	&:focus:required:invalid { border-color: red }
+	&:required:valid { border-color: green }
+}
+
+body {
+	font-family: $font_base;
+	font-size: $font_size;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	overflow-x: hidden;
+	color: $text_color;
+}
+
+h2{
+	font-family: $font_title;
+	font-size: 1.143em;
+	line-height: 1.25;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 0;
+	&.dark{
+		color: $text_color
+	}
+}
